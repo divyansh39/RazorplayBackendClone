@@ -20,9 +20,6 @@ public class WebhookEvent {
     @Column(nullable = false)
     private UUID merchantId;
 
-    @OneToMany(fetch = FetchType.LAZY)
-    private WebhookEvent webhookEvent;
-
     @Column(nullable = false, length = 100)
     private String eventType;
 
